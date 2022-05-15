@@ -25,6 +25,7 @@ import reactImage from "./images/ReactImage.png";
 import gitImage from "./images/GitImage.png";
 import githubImage from "./images/GitHubImage.png";
 import dockerImage from "./images/DockerImage.png";
+import homeIOTImage from "./images/HomeIOT.png";
 import React, { useState, useEffect, cloneElement } from "react";
 
 function App() {
@@ -454,7 +455,10 @@ function App() {
                     <p class="card-text" className="projectCard">
                       리액트를 이용한 포트폴리오<br></br>#React
                     </p>
-                    <a href="#" class="btn ">
+                    <a
+                      href="https://github.com/sbs1621/MyPortfolio-React"
+                      class="btn "
+                    >
                       <img
                         src={gitHubImage}
                         style={{
@@ -473,6 +477,44 @@ function App() {
                         }}
                       />
                     </a>
+                  </div>
+                </div>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div
+                style={{
+                  width: "30%",
+                  marginLeft: "35%",
+                  marginTop: "5%",
+                  marginBottom: "5%",
+                }}
+              >
+                <div>
+                  <img
+                    style={{
+                      height: "235px",
+                    }}
+                    src={homeIOTImage}
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title" className="projectCardTitle">
+                      HomeIOT
+                    </h5>
+                    <p class="card-text" className="projectCard">
+                      아두이노를 이용한 HomeIOT WebServer<br></br>#Arduino #C
+                    </p>
+                    <a href="https://github.com/sbs1621/HomeIOT" class="btn ">
+                      <img
+                        src={gitHubImage}
+                        style={{
+                          width: "30px",
+                          height: "30px",
+                        }}
+                      />
+                    </a>
+                    &nbsp;
                   </div>
                 </div>
               </div>
