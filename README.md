@@ -5,4 +5,5 @@
 ### 사용 라이브러리
 - React-Bootstrap
 - Typed
-- Scrollspy
+### 사용폰트
+- 어그로폰트(샌드박스)
