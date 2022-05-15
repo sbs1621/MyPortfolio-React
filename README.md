@@ -1,1 +1,8 @@
 # MyPortfolio-React
+
+## 리액트 기반 웹페이지
+
+### 사용 라이브러리
+- React-Bootstrap
+- Typed
+- Scrollspy
