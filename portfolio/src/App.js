@@ -185,7 +185,7 @@ function App() {
                 style={{
                   width: "80px",
 
-                  marginRight: "10%",
+                  marginRight: "5%",
                   marginBottom: "10%",
                 }}
               />
@@ -194,7 +194,7 @@ function App() {
                 src={springImage}
                 style={{
                   width: "80px",
-                  marginLeft: "10%",
+                  marginLeft: "5%",
 
                   marginBottom: "10%",
                 }}
@@ -207,7 +207,7 @@ function App() {
                 style={{
                   width: "80px",
 
-                  marginRight: "10%",
+                  marginRight: "5%",
                   marginBottom: "10%",
                 }}
               ></img>
@@ -216,7 +216,7 @@ function App() {
                 src={postgreSqlImage}
                 style={{
                   width: "80px",
-                  marginLeft: "10%",
+                  marginLeft: "5%",
 
                   marginBottom: "10%",
                 }}
@@ -242,7 +242,7 @@ function App() {
                 style={{
                   width: "80px",
 
-                  marginRight: "10%",
+                  marginRight: "5%",
                   marginBottom: "10%",
                 }}
               />
@@ -251,7 +251,7 @@ function App() {
                 src={cssImage}
                 style={{
                   width: "80px",
-                  marginLeft: "10%",
+                  marginLeft: "5%",
 
                   marginBottom: "10%",
                 }}
@@ -263,7 +263,7 @@ function App() {
                 style={{
                   width: "60px",
 
-                  marginRight: "10%",
+                  marginRight: "5%",
                   marginBottom: "10%",
                 }}
               ></img>
@@ -273,7 +273,7 @@ function App() {
                 style={{
                   width: "80px",
 
-                  marginLeft: "10%",
+                  marginLeft: "5%",
                   marginBottom: "10%",
                 }}
               ></img>
@@ -297,7 +297,7 @@ function App() {
                 src={githubImage}
                 style={{
                   width: "80px",
-                  marginRight: "10%",
+                  marginRight: "5%",
                   marginBottom: "10%",
                 }}
               />
@@ -306,7 +306,7 @@ function App() {
                 src={gitImage}
                 style={{
                   width: "80px",
-                  marginLeft: "10%",
+                  marginLeft: "5%",
                   marginBottom: "10%",
                 }}
               ></img>
