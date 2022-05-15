@@ -2,10 +2,9 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Typed from "react-typed";
 import { Carousel } from "react-bootstrap";
-import profileImage from "./images/profileImage.jpeg";
-import firstProjectImage from "./images/1stImage.jpeg";
+
 import secondProjectImage from "./images/2ndImage.jpeg";
-import thirdProjectImage from "./images/3rdImage.jpeg";
+
 import gitHubImage from "./images/git.png";
 import notionImage from "./images/notion.jpg";
 import personImage from "./images/person.svg";
@@ -26,6 +25,8 @@ import gitImage from "./images/GitImage.png";
 import githubImage from "./images/GitHubImage.png";
 import dockerImage from "./images/DockerImage.png";
 import homeIOTImage from "./images/HomeIOT.png";
+import casinoJ from "./images/CasinoJ.png";
+import portfolio from "./images/portfolio.png";
 import React, { useState, useEffect, cloneElement } from "react";
 
 function App() {
@@ -75,7 +76,7 @@ function App() {
             <Typed
               strings={[
                 "저의 포트폴리오에 오신것을 환영합니다.",
-                "Java와 Spring을 공부하며",
+                "Java와 Spring을 공부하여",
                 "백엔드 개발자를 목표로 하는 성병석 입니다.",
               ]}
               typeSpeed={60}
@@ -123,14 +124,14 @@ function App() {
               <div className="item">
                 <img src={calenderImage} className={"profile"} />
                 <div className="profileItem">
-                  <h4>birth date</h4>
+                  <h4>Birth date</h4>
                   <h5>2000.1.19</h5>
                 </div>
               </div>
               <div className="item">
                 <img src={locateImage} className={"profile"} />
                 <div className="profileItem">
-                  <h4>address</h4>
+                  <h4>Address</h4>
                   <h5>김해시 인제대학교</h5>
                 </div>
               </div>
@@ -144,7 +145,7 @@ function App() {
               <div className="item">
                 <img src={emailImage} className={"profile"} />
                 <div className="profileItem">
-                  <h4>email</h4>
+                  <h4>Email</h4>
                   <h5>abc1234@naver.com</h5>
                 </div>
               </div>
@@ -367,7 +368,7 @@ function App() {
                     style={{
                       height: "235px",
                     }}
-                    src={firstProjectImage}
+                    src={casinoJ}
                     class="card-img-top"
                   />
                   <div class="card-body">
@@ -445,7 +446,7 @@ function App() {
                     style={{
                       height: "235px",
                     }}
-                    src={thirdProjectImage}
+                    src={portfolio}
                     class="card-img-top"
                   />
                   <div class="card-body">
@@ -468,7 +469,10 @@ function App() {
                       />
                     </a>
                     &nbsp;
-                    <a href="#" class="btn ">
+                    <a
+                      href="https://pacific-cicada-ac3.notion.site/004d916aa9b7460e8029dfb0ec26e1a7"
+                      class="btn "
+                    >
                       <img
                         src={notionImage}
                         style={{
