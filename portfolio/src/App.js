@@ -1,6 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
-import { Container, Col, Row, Stack } from "react-bootstrap";
+import { Container, Col, Row, Stack, Card, Button, Nav } from "react-bootstrap";
 import Typed from "react-typed";
 import { Carousel } from "react-bootstrap";
 
@@ -34,12 +34,12 @@ function App() {
   return (
     <>
       <header className="header" style={{ fontFamily: "어그로" }}>
-        <nav
+        <Nav
           id="navbar-example2"
           class="navbar navbar-light bg-light px-0 fixed-top justify-content-center"
         >
           <a class="navbar-brand" href="#">
-            <h5 style={{ paddingRight: "200px" }}>Byeongseok's Portfolio</h5>
+            <h5 style={{ paddingRight: "150px" }}>Byeongseok's Portfolio</h5>
           </a>
           <ul class="nav nav-pills">
             <li class="nav-item">
@@ -63,7 +63,7 @@ function App() {
               </a>
             </li>
           </ul>
-        </nav>
+        </Nav>
       </header>
       <main className="scroll-container">
         <div style={{ backgroundColor: "black", marginTop: "70px" }}>
@@ -93,17 +93,16 @@ function App() {
               fontSize: "25px",
             }}
           >
-            저는 힘든 상황에서 더욱 성장하게 합니다.<br></br>어려워도
-            포기하지않는 것이 저의 장점입니다.
+            저는 힘든 상황에서 더욱 성장 합니다.<br></br>어려워도 포기하지않는
+            것이 저의 장점입니다.
           </div>
           <Container
             style={{
               backgroundColor: "lightgrey",
               width: "80%",
-              height: "50%",
-              marginRight: "10%",
+              height: "500px",
               marginTop: "2%",
-              paddingBottom: "2%",
+              paddingBottom: "4%",
               borderRadius: "12px",
             }}
           >
@@ -407,34 +406,38 @@ function App() {
               marginLeft: "15%",
               marginRight: "15%",
               borderRadius: "12px",
-              height: "600px",
+              height: "65%",
+              fontFamily: "Pretendard",
             }}
           >
             <Carousel.Item>
-              <div
+              <Card
                 style={{
                   width: "30%",
+
                   marginLeft: "35%",
                   marginTop: "5%",
                   marginBottom: "5%",
+                  backgroundColor: "black",
+                  borderColor: "white",
+                  color: "white",
                 }}
               >
-                <div>
-                  <img
-                    style={{
-                      height: "235px",
-                    }}
-                    src={casinoJ}
-                    class="card-img-top"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title" className="projectCardTitle">
-                      Casino J
-                    </h5>
-                    <p class="card-text" className="projectCard">
-                      자바 스윙을 이용한 카드게임<br></br> #Java #Swing #SQLite
-                    </p>
-                    <a href="https://github.com/jadru/Casino-J" class="btn ">
+                <Card.Img
+                  variant="top"
+                  style={{
+                    height: "235px",
+                  }}
+                  src={casinoJ}
+                  class="card-img-top"
+                />
+                <Card.Body>
+                  <Card.Title>CasinoJ</Card.Title>
+                  <Card.Text>
+                    자바 스윙을 이용한 카드게임<br></br> #Java #Swing #SQLite
+                  </Card.Text>
+                  <Button variant="link">
+                    <a href="https://github.com/jadru/Casino-J">
                       <img
                         src={gitHubImage}
                         style={{
@@ -443,39 +446,38 @@ function App() {
                         }}
                       />
                     </a>
-                  </div>
-                </div>
-              </div>
+                  </Button>
+                </Card.Body>
+              </Card>
             </Carousel.Item>
             <Carousel.Item>
-              <div
+              <Card
                 style={{
                   width: "30%",
                   marginLeft: "35%",
                   marginTop: "5%",
                   marginBottom: "5%",
+                  backgroundColor: "black",
+                  borderColor: "white",
+                  color: "white",
                 }}
               >
-                <div>
-                  <img
-                    style={{
-                      height: "235px",
-                    }}
-                    src={secondProjectImage}
-                    class="card-img-top"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title" className="projectCardTitle">
-                      E105
-                    </h5>
-                    <p class="card-text" className="projectCard">
-                      인제대학교 컴공 동아리방 관리 시스템<br></br>
-                      #Java #Spring #PostgreSQL #Docker
-                    </p>
-                    <a
-                      href="https://github.com/inje-megabrain/E105"
-                      class="btn "
-                    >
+                <Card.Img
+                  variant="top"
+                  style={{
+                    height: "235px",
+                  }}
+                  src={secondProjectImage}
+                  class="card-img-top"
+                />
+                <Card.Body>
+                  <Card.Title>E105</Card.Title>
+                  <Card.Text>
+                    인제대학교 컴공 동아리방 관리 시스템<br></br>
+                    #Java #Spring #PostgreSQL #Docker
+                  </Card.Text>
+                  <Button variant="link">
+                    <a href="https://github.com/inje-megabrain/E105">
                       <img
                         src={gitHubImage}
                         style={{
@@ -484,38 +486,39 @@ function App() {
                         }}
                       />
                     </a>
-                  </div>
-                </div>
-              </div>
+                  </Button>
+                </Card.Body>
+              </Card>
             </Carousel.Item>
             <Carousel.Item>
-              <div
+              <Card
                 style={{
                   width: "30%",
                   marginLeft: "35%",
                   marginTop: "5%",
                   marginBottom: "5%",
+                  backgroundColor: "black",
+                  borderColor: "white",
+                  color: "white",
                 }}
               >
-                <div>
-                  <img
-                    style={{
-                      height: "235px",
-                    }}
-                    src={portfolio}
-                    class="card-img-top"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title" className="projectCardTitle">
-                      포트폴리오
-                    </h5>
-                    <p class="card-text" className="projectCard">
-                      리액트를 이용한 포트폴리오<br></br>#React
-                    </p>
-                    <a
-                      href="https://github.com/sbs1621/MyPortfolio-React"
-                      class="btn "
-                    >
+                <Card.Img
+                  variant="top"
+                  style={{
+                    height: "235px",
+                    borderColor: "white",
+                  }}
+                  src={portfolio}
+                  class="card-img-top"
+                />
+                <Card.Body>
+                  <Card.Title>포트폴리오</Card.Title>
+                  <Card.Text>
+                    리액트를 이용한 포트폴리오<br></br>
+                    #React #Bootstrap
+                  </Card.Text>
+                  <Button variant="link">
+                    <a href="https://github.com/sbs1621/MyPortfolio-React">
                       <img
                         src={gitHubImage}
                         style={{
@@ -524,60 +527,49 @@ function App() {
                         }}
                       />
                     </a>
-                    &nbsp;
-                    <a
-                      href="https://pacific-cicada-ac3.notion.site/004d916aa9b7460e8029dfb0ec26e1a7"
-                      class="btn "
-                    >
-                      <img
-                        src={notionImage}
-                        style={{
-                          width: "30px",
-                          height: "30px",
-                        }}
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
+                  </Button>
+                </Card.Body>
+              </Card>
             </Carousel.Item>
             <Carousel.Item>
-              <div
+              <Card
                 style={{
                   width: "30%",
                   marginLeft: "35%",
                   marginTop: "5%",
                   marginBottom: "5%",
+                  backgroundColor: "black",
+                  borderColor: "white",
+                  color: "white",
                 }}
               >
-                <div>
-                  <img
-                    style={{
-                      height: "235px",
-                    }}
-                    src={homeIOTImage}
-                    class="card-img-top"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title" className="projectCardTitle">
-                      HomeIOT
-                    </h5>
-                    <p class="card-text" className="projectCard">
-                      아두이노를 이용한 HomeIOT WebServer<br></br>#Arduino #C
-                    </p>
-                    <a href="https://github.com/sbs1621/HomeIOT" class="btn ">
+                <Card.Img
+                  variant="top"
+                  style={{
+                    height: "235px",
+                  }}
+                  src={homeIOTImage}
+                  class="card-img-top"
+                />
+                <Card.Body>
+                  <Card.Title>HomeIOT</Card.Title>
+                  <Card.Text>
+                    아두이노를 이용한 HomeIOT WebServer구축<br></br>
+                    #Arduino #C
+                  </Card.Text>
+                  <Button variant="link">
+                    <a href="https://github.com/sbs1621/HomeIOT">
                       <img
-                        src={require("./images/git.png")}
+                        src={gitHubImage}
                         style={{
                           width: "30px",
                           height: "30px",
                         }}
                       />
                     </a>
-                    &nbsp;
-                  </div>
-                </div>
-              </div>
+                  </Button>
+                </Card.Body>
+              </Card>
             </Carousel.Item>
           </Carousel>
         </div>

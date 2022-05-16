@@ -5,6 +5,10 @@
   font-family: "어그로";
   src: url(./fonts/SB\ 어그로\ B.ttf);
 }
+@font-face {
+  font-family: "Pretendard";
+  src: url(./fonts/Pretendard-Regular.ttf);
+}
 
 img.profile {
   width: 60px;
@@ -21,7 +25,7 @@ div.container {
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 5%;
-  margin-left: 15%;
+
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
