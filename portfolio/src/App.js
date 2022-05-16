@@ -1,5 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
+import { Container, Col, Row, Stack } from "react-bootstrap";
 import Typed from "react-typed";
 import { Carousel } from "react-bootstrap";
 
@@ -35,56 +36,52 @@ function App() {
       <header className="header" style={{ fontFamily: "어그로" }}>
         <nav
           id="navbar-example2"
-          class="navbar navbar-light bg-light px-5 fixed-top justify-content-center"
+          class="navbar navbar-light bg-light px-0 fixed-top justify-content-center"
         >
           <a class="navbar-brand" href="#">
-            Byeongseok's Portfolio&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
-            &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-            &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-            &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+            <h5 style={{ paddingRight: "200px" }}>Byeongseok's Portfolio</h5>
           </a>
           <ul class="nav nav-pills">
             <li class="nav-item">
               <a class="nav-link" href="#scrollspyHeading1">
-                <h3 class="link-warning">Home</h3>
+                <h4 class="link-warning">Home</h4>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#scrollspyHeading2">
-                <h3 class="link-warning">About Me</h3>
+                <h4 class="link-warning">About Me</h4>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#scrollspyHeading3">
-                <h3 class="link-warning">Skills</h3>
+                <h4 class="link-warning">Skills</h4>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#scrollspyHeading4">
-                <h3 class="link-warning">Project</h3>
+                <h4 class="link-warning">Project</h4>
               </a>
             </li>
           </ul>
         </nav>
       </header>
       <main className="scroll-container">
-        <div style={{ backgroundColor: "black" }}>
+        <div style={{ backgroundColor: "black", marginTop: "70px" }}>
           <h4 id="scrollspyHeading1"></h4>
           <h1 className={"home"}>
             <br></br>
             <Typed
               strings={[
-                "저의 포트폴리오에 오신것을 환영합니다.",
+                "저의 포트폴리오에 오신 것을 환영합니다.",
                 "Java와 Spring을 공부하여",
-                "백엔드 개발자를 목표로 하는 성병석 입니다.",
+                "백엔드 개발자를 목표로 하는 성병석입니다.",
               ]}
               typeSpeed={60}
               backSpeed={30}
             />
           </h1>
         </div>
-        <div style={{ backgroundColor: "white" }}>
+        <Stack style={{ backgroundColor: "white" }}>
           <h4 id="scrollspyHeading2"></h4>
           <br></br>
           <h1 className="aboutMe">About me</h1>
@@ -96,69 +93,121 @@ function App() {
               fontSize: "25px",
             }}
           >
-            힘든 환경은 저를 성장하게 합니다.<br></br>어려움이 있어도 포기하지
-            않는것이 저의 장점입니다.
+            저는 힘든 상황에서 더욱 성장하게 합니다.<br></br>어려워도
+            포기하지않는 것이 저의 장점입니다.
           </div>
-          <div
+          <Container
             style={{
-              width: "70%",
-              height: "50%",
               backgroundColor: "lightgrey",
+              width: "80%",
+              height: "50%",
+              marginRight: "10%",
               marginTop: "2%",
-              marginLeft: "15%",
-              marginRight: "15%",
+              paddingBottom: "2%",
               borderRadius: "12px",
             }}
           >
-            <div className="container">
-              <div className="item">
-                <div>
+            <Row
+              style={{
+                width: "100%",
+              }}
+            >
+              <Col>
+                <Stack
+                  direction="horizontal"
+                  gap={4}
+                  className="col-md-7 mx-auto"
+                >
                   <img src={personImage} className={"profile"} />
-                </div>
-                <div className="profileItem">
-                  <h4>Name</h4>
-                  <h5>성병석</h5>
-                </div>
-              </div>
+                  <div>
+                    <h4 style={{ width: "300px" }}>Name</h4>
+                    <h5 style={{ width: "300px" }}>성병석</h5>
+                  </div>
+                </Stack>
+              </Col>
+              <Col>
+                <Stack
+                  direction="horizontal"
+                  gap={4}
+                  className="col-md-7 mx-auto"
+                >
+                  <img src={calenderImage} className={"profile"} />
+                  <div>
+                    <h4 style={{ width: "300px" }}>Birth</h4>
+                    <h5 style={{ width: "300px" }}>2000.1.19</h5>
+                  </div>
+                </Stack>
+              </Col>
+            </Row>
 
-              <div className="item">
-                <img src={calenderImage} className={"profile"} />
-                <div className="profileItem">
-                  <h4>Birth date</h4>
-                  <h5>2000.1.19</h5>
-                </div>
-              </div>
-              <div className="item">
-                <img src={locateImage} className={"profile"} />
-                <div className="profileItem">
-                  <h4>Address</h4>
-                  <h5>김해시 인제대학교</h5>
-                </div>
-              </div>
-              <div className="item">
-                <img src={callImage} className={"profile"} />
-                <div className="profileItem">
-                  <h4>Phone number</h4>
-                  <h5>010.1234.xxxx</h5>
-                </div>
-              </div>
-              <div className="item">
-                <img src={emailImage} className={"profile"} />
-                <div className="profileItem">
-                  <h4>Email</h4>
-                  <h5>abc1234@naver.com</h5>
-                </div>
-              </div>
-              <div className="item">
-                <img src={schoolImage} className={"profile"} />
-                <div className="profileItem">
-                  <h4>Education</h4>
-                  <h5>인제대 컴공 재학</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+            <Row
+              style={{
+                width: "100%",
+              }}
+            >
+              <Col>
+                <Stack
+                  direction="horizontal"
+                  gap={4}
+                  className="col-md-7 mx-auto"
+                >
+                  <img src={locateImage} className={"profile"} />
+                  <div>
+                    <h4 style={{ width: "300px" }}>Address</h4>
+                    <h5 style={{ width: "300px" }}>
+                      경상남도 창원시 마산합포구
+                    </h5>
+                  </div>
+                </Stack>
+              </Col>
+              <Col>
+                <Stack
+                  direction="horizontal"
+                  gap={4}
+                  className="col-md-7 mx-auto"
+                >
+                  <img src={callImage} className={"profile"} />
+                  <div>
+                    <h4 style={{ width: "300px" }}>Phone</h4>
+                    <h5 style={{ width: "300px" }}>010.1234.xxxx</h5>
+                  </div>
+                </Stack>
+              </Col>
+            </Row>
+            <Row
+              style={{
+                width: "100%",
+              }}
+            >
+              <Col>
+                <Stack
+                  direction="horizontal"
+                  gap={4}
+                  className="col-md-7 mx-auto"
+                >
+                  <img src={emailImage} className={"profile"} />
+                  <div>
+                    <h4 style={{ width: "300px" }}>Email</h4>
+                    <h5 style={{ width: "300px" }}>abc1234@naver.com</h5>
+                  </div>
+                </Stack>
+              </Col>
+              <Col>
+                <Stack
+                  direction="horizontal"
+                  gap={4}
+                  className="col-md-7 mx-auto"
+                >
+                  <img src={schoolImage} className={"profile"} />
+                  <div>
+                    <h4 style={{ width: "300px" }}>Education</h4>
+                    <h5 style={{ width: "300px" }}>인제대 컴공 재학</h5>
+                  </div>
+                </Stack>
+              </Col>
+            </Row>
+          </Container>
+        </Stack>
         <div style={{ backgroundColor: "beige" }}>
           <h4 id="scrollspyHeading3"></h4>
           <br></br>
@@ -168,7 +217,7 @@ function App() {
             <div
               style={{
                 width: "30%",
-                height: "50%",
+
                 backgroundColor: "white",
                 marginTop: "4%",
                 marginLeft: "3%",
@@ -177,14 +226,16 @@ function App() {
                 borderRadius: "12px",
               }}
             >
-              <h1 style={{ textAlign: "center" }}>Backend</h1>
+              <h2 style={{ textAlign: "center", paddingBottom: "10px" }}>
+                Backend
+              </h2>
 
               <img
                 class="scale"
                 src={javaImage}
                 style={{
                   width: "80px",
-
+                  marginLeft: "5%",
                   marginRight: "5%",
                   marginBottom: "10%",
                 }}
@@ -195,7 +246,7 @@ function App() {
                 style={{
                   width: "80px",
                   marginLeft: "5%",
-
+                  marginRight: "5%",
                   marginBottom: "10%",
                 }}
               ></img>
@@ -206,7 +257,7 @@ function App() {
                 src={nodeImage}
                 style={{
                   width: "80px",
-
+                  marginLeft: "5%",
                   marginRight: "5%",
                   marginBottom: "10%",
                 }}
@@ -217,7 +268,7 @@ function App() {
                 style={{
                   width: "80px",
                   marginLeft: "5%",
-
+                  marginRight: "5%",
                   marginBottom: "10%",
                 }}
               ></img>
@@ -225,7 +276,7 @@ function App() {
             <div
               style={{
                 width: "30%",
-                height: "50%",
+
                 backgroundColor: "white",
                 marginTop: "4%",
                 marginLeft: "3%",
@@ -234,14 +285,14 @@ function App() {
                 borderRadius: "12px",
               }}
             >
-              <h1>Frontend</h1>
+              <h2 style={{ paddingBottom: "10px" }}>Frontend</h2>
 
               <img
                 class="scale"
                 src={htmlImage}
                 style={{
                   width: "80px",
-
+                  marginLeft: "5%",
                   marginRight: "5%",
                   marginBottom: "10%",
                 }}
@@ -252,6 +303,7 @@ function App() {
                 style={{
                   width: "80px",
                   marginLeft: "5%",
+                  marginRight: "5%",
 
                   marginBottom: "10%",
                 }}
@@ -262,7 +314,7 @@ function App() {
                 src={jsImage}
                 style={{
                   width: "60px",
-
+                  marginLeft: "5%",
                   marginRight: "5%",
                   marginBottom: "10%",
                 }}
@@ -272,8 +324,8 @@ function App() {
                 src={reactImage}
                 style={{
                   width: "80px",
-
                   marginLeft: "5%",
+                  marginRight: "5%",
                   marginBottom: "10%",
                 }}
               ></img>
@@ -281,7 +333,7 @@ function App() {
             <div
               style={{
                 width: "30%",
-                height: "50%",
+
                 backgroundColor: "white",
                 marginTop: "4%",
                 marginLeft: "3%",
@@ -290,13 +342,16 @@ function App() {
                 borderRadius: "12px",
               }}
             >
-              <h1 style={{ textAlign: "center" }}>Control</h1>
+              <h2 style={{ textAlign: "center", paddingBottom: "10px" }}>
+                Control
+              </h2>
 
               <img
                 class="scale"
                 src={githubImage}
                 style={{
                   width: "80px",
+                  marginLeft: "5%",
                   marginRight: "5%",
                   marginBottom: "10%",
                 }}
@@ -307,6 +362,7 @@ function App() {
                 style={{
                   width: "80px",
                   marginLeft: "5%",
+                  marginRight: "5%",
                   marginBottom: "10%",
                 }}
               ></img>
@@ -342,16 +398,16 @@ function App() {
           <h4 id="scrollspyHeading4"></h4>
           <br></br>
           <h1 className="project">Project</h1>
-          <br></br>
-          <br></br>
+
           <Carousel
             indicators
             style={{
               backgroundColor: "black",
+              marginTop: "3%",
               marginLeft: "15%",
               marginRight: "15%",
               borderRadius: "12px",
-              height: "60%",
+              height: "600px",
             }}
           >
             <Carousel.Item>
@@ -511,7 +567,7 @@ function App() {
                     </p>
                     <a href="https://github.com/sbs1621/HomeIOT" class="btn ">
                       <img
-                        src={gitHubImage}
+                        src={require("./images/git.png")}
                         style={{
                           width: "30px",
                           height: "30px",
